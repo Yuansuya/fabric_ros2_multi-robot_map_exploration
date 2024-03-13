@@ -7,6 +7,8 @@
 
 使用了hyperledger fabric作為區塊鏈平台，ros2作為機器人控制系統。為了將fabric跟ros2串接，採用go application，這讓我可以建立用go語言撰寫的ros2 node，以便調用chaincode的內容。
 
+[機器人自動區域探索source code](https://github.com/Yuansuya/multi-robot_map_exploration/)
+
 Version:
 * hyperledger fabric: 2.5
 * ros2: foxy
@@ -14,7 +16,14 @@ Version:
 * Ubuntu: 20.04
 
 ## Goal
-設計多機器人協同方法，在探索未知區域時，能達到達成高效探索、高擴展性與高可靠性等成果。
+設計一多機器人協同方法，在探索未知區域時，能達到達成高效探索、高擴展性與高可靠性等成果。
+
+## Demo
+採用gazebo作為模擬軟體。
+
+[![demo](https://img.youtube.com/vi/X8ZK3-JHJ0A/0.jpg)](https://www.youtube.com/watch?v=X8ZK3-JHJ0A)   <- youtube link here
+
+
 
 ## chaincode(CC)
 
