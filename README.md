@@ -7,8 +7,9 @@
 
 Version:
 * hyperledger fabric: 2.5
-* go: 1.20.2
 * ros2: foxy
+* go: 1.20.2
+* Ubuntu: 20.04
 
 
 ## chaincode(CC)
