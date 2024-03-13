@@ -3,6 +3,8 @@
 ## Introduction
 **該source code為論文Blockchain-Based Multi-Robot Collaborative Map Exploration @NCU by Kevin Zhang (2023)**
 
+該專案採用了區塊鏈作為多機器人資料交換的平台，並採用拓樸地圖(Topological Map)作為多機器人間共享的地圖，達到低傳輸頻寬，並設計了一輕量化任務分配演算法Tiny MinPos，讓多機器人在分配任務時可以有效的避免重複探索。
+
 使用了hyperledger fabric作為區塊鏈平台，ros2作為機器人控制系統。為了將fabric跟ros2串接，採用go application，這讓我可以建立用go語言撰寫的ros2 node，以便調用chaincode的內容。
 
 Version:
@@ -11,6 +13,8 @@ Version:
 * go: 1.20.2
 * Ubuntu: 20.04
 
+## Goal
+設計多機器人協同方法，在探索未知區域時，能達到達成高效探索、高擴展性與高可靠性等成果。
 
 ## chaincode(CC)
 
@@ -47,3 +51,5 @@ Version:
 每個機器人節點都需要不同的配置(e.g. ip, key)，透過修改/config/core.yaml調配。
 terminalorgX(X= 1, 2, 3)為不同機器人給的環境變數，其中包含不同組織憑證位置, IP, TLS_ENABLE等等
 
+## Contact
+Email: kevincolin933@gmail.com
