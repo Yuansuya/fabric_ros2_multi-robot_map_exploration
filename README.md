@@ -13,7 +13,7 @@ Version:
 
 ## chaincode(CC)
 
-區塊鏈交互核心程式，即俗稱的智能合約
+區塊鏈資料交互核心程式，即俗稱的智能合約，寫method/algorithm的地方
 
 ### Task
 該CC用來交互關於**未探索點/任務點(task)** 的所有資料，包含了以下prototype
@@ -31,4 +31,14 @@ Version:
 * Update - 更新地圖
 * GetRobotMapNode - 獲取當前機器人位於地圖之位置
 * GetShortestPath - 計算兩點之間的最短路徑之路徑點，輸入為兩個頂點，輸出為一頂點陣列
+
+## invokeCC
+每一個資料夾都是一個ros2 node，他會持續執行直到手動shutdown。是區塊鏈(blockchain)跟外界溝通(ros2 nodes)的橋樑，透過ros2溝通的方式(topic publish/subscript)的方式新增/修改資料
+
+* Filter - 處理任務點過濾的node
+* getTasks - 接收/發佈任務點到topic中
+* initNode - 初始化機器人狀態，用於當新的機器人加入時將新機器人資訊更新到blockchain
+* taskAllocation - 提供任務分配的服務
+* TMget - 接收/發佈地圖資訊(Topological Map, TM)到topic中
+* updateTM - 更新地圖資訊
 
