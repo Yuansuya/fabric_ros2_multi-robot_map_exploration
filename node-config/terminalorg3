@@ -1,0 +1,20 @@
+export CORE_PEER_TLS_ENABLED=true
+export CORE_PEER_LOCALMSPID="org1MSP"
+export CORE_PEER_TLS_ROOTCERT_FILE=/media/sf_hyperledger/org1/peer3/assets/tls-ca/tls-ca-cert.pem
+export CORE_PEER_MSPCONFIGPATH=/media/sf_hyperledger/org1/admin/msp
+export CORE_PEER_ADDRESS=192.168.0.103:7051
+
+export PATH=$PATH:$HOME/go/bin/
+
+export FABRIC_CFG_PATH=$HOME/mybc/config/
+
+export CORE_PEER_ID=peer3-org1
+export CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+export FABRIC_LOGGING_SPEC=info
+export CORE_PEER_TLS_CERT_FILE=/media/sf_hyperledger/org1/peer3/tls-msp/signcerts/cert.pem
+export CORE_PEER_TLS_KEY_FILE=/media/sf_hyperledger/org1/peer3/tls-msp/keystore/key.pem
+export CORE_PEER_GOSSIP_USELEADERELECTION=true
+export CORE_PEER_GOSSIP_ORGLEADER=false
+export CORE_PEER_GOSSIP_SKIPHANDSHAKE=true
+export CORE_METRICS_PROVIDER=prometheus
+export CORE_OPERATIONS_LISTENADDRESS=192.168.0.103:9444
