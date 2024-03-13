@@ -16,7 +16,7 @@ Version:
 
 區塊鏈資料交互核心程式，即俗稱的智能合約，寫method/algorithm的地方
 
-### Task
+### Task(task.go)
 該CC用來交互關於**未探索點/任務點(task)** 的所有資料，包含了以下prototype
 * Set_r_TM_node_filter - 設定過濾的精確度
 * AddTask - 新增任務點
@@ -26,7 +26,7 @@ Version:
 * TaskAllocationGreedy - 貪婪算法的任務分配(用於實驗)
 * TaskAllocation - Tiny-MinPos算法的任務分配(本論文提出之算法)
 
-### TopoMap
+### TopoMap(tm.go)
 該CC用來交互關於**地圖**的所有資料，包含了以下prototype
 * NewRobotJoin - 加入新機器人
 * Update - 更新地圖
