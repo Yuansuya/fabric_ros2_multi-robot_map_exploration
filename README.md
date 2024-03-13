@@ -43,3 +43,7 @@ Version:
 * TMget - 接收/發佈地圖資訊(Topological Map, TM)到topic中
 * updateTM - 更新地圖資訊
 
+## node-config
+每個機器人節點都需要不同的配置(e.g. ip, key)，透過修改/config/core.yaml調配。
+terminalorgX(X= 1, 2, 3)為不同機器人給的環境變數，其中包含不同組織憑證位置, IP, TLS_ENABLE等等
+
