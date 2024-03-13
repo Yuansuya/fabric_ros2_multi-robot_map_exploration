@@ -3,14 +3,13 @@
 ## Introduction
 **該source code為論文Blockchain-Based Multi-Robot Collaborative Map Exploration @NCU by Kevin Zhang (2023)**
 
-使用了hyperledger fabric作為區塊鏈平台，ros2作為機器人控制系統。為串接fabric跟ros2，採用go application，讓我可以建立用go語言寫的ros2 node，就可以調用chaincode的內容。
+使用了hyperledger fabric作為區塊鏈平台，ros2作為機器人控制系統。為了將fabric跟ros2串接，採用go application，這讓我可以建立用go語言撰寫的ros2 node，以便調用chaincode的內容。
 
-:::info
 Version:
-hyperledger fabric: 2.5
-go: 1.20.2
-ros2: foxy
-:::
+* hyperledger fabric: 2.5
+* go: 1.20.2
+* ros2: foxy
+
 
 ## chaincode(CC)
 
