@@ -36,7 +36,7 @@ Version:
 ## invokeCC
 每一個資料夾都是一個ros2 node，他會持續執行直到手動shutdown。是區塊鏈(blockchain)跟外界溝通(ros2 nodes)的橋樑，透過ros2溝通的方式(topic publish/subscript)的方式新增/修改資料
 
-* **filter** (invokeCC/filter/filter.go) - 處理任務點過濾的node
+* **filter** (invokeCC/filter/filter.go) - 處理任務點過濾
 * **getTasks** (invokeCC/getTasks/get.go)- 接收/發佈任務點到topic中
 * **initNode** (invokeCC/initNode/init.go)- 初始化機器人狀態，用於當新的機器人加入時將新機器人資訊更新到blockchain
 * **taskAllocation** (invokeCC/taskAllocation/ta.go)- 提供任務分配的服務
