@@ -16,7 +16,7 @@ Version:
 區塊鏈交互核心程式，即俗稱的智能合約
 
 ### Task
-該CC用來交互關於==未探索點/任務點(task)==的所有資料，包含了以下prototype
+該CC用來交互關於**未探索點/任務點(task)** 的所有資料，包含了以下prototype
 * Set_r_TM_node_filter - 設定過濾的精確度
 * AddTask - 新增任務點
 * GetTask - 獲取當前所有任務點
@@ -26,7 +26,7 @@ Version:
 * TaskAllocation - Tiny-MinPos算法的任務分配(本論文提出之算法)
 
 ### TopoMap
-該CC用來交互關於==地圖==的所有資料，包含了以下prototype
+該CC用來交互關於**地圖**的所有資料，包含了以下prototype
 * NewRobotJoin - 加入新機器人
 * Update - 更新地圖
 * GetRobotMapNode - 獲取當前機器人位於地圖之位置
